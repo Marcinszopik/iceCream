@@ -11,8 +11,11 @@ $(document).ready(function(){
     var groceryItems = [$("#grocery1").val(), $('#grocery2').val(), $('#grocery3').val()];
     var groceryList = groceryItems.map(function(groceryItems){
       return groceryItems.toUpperCase();
+
     });
-    alert(groceryList)
+
+    groceryList.sort();
+    alert(groceryList);
 
     // function myFunction() {
     //   var text = document.getElementById("demo").innerHTML;
